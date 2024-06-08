@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Book Using GenAI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+      <div class="container">
+        <h2>Audio Book Generator</h2>
+        <p>Generate versetile audio books for free...!</p>
+        <textarea id="text-input" placeholder="Enter text here..."></textarea>
+        <br />
+        <button id="convert-btn" onclick="convertTextToSpeech()">
+          Convert to Speech
+        </button>
+        <br />
+        <audio id="audio-player" controls></audio>
+        <br />
+        <a id="download-link" style="display: none">Download Audio</a>
+      </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
